@@ -1,0 +1,12 @@
+{
+  "name": "gyeongbuk-child-reference",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "check": "node --check public/engine.js && node --check public/branches.js && node --check public/life-engine.js && node --check public/app.js && node --check public/school-model.js && node --check public/career-content.js && node --check public/early-model.js && node --check public/life-consequences.js && node --check public/story-scenes.js && node --check public/story-decisions.js && node --check public/booth-engine.js && node --check public/print-passport.js && node --check public/policy-review.js",
+    "build:pages": "npm run check && npm test",
+    "start": "python3 scripts/serve.py"
+  },
+  "description": "경북의 아이 — 나의 배움길: 원작자 전달용 HTML/CSS/JS 앱 참고 구현"
+}

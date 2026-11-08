@@ -1,0 +1,15 @@
+
+ @page{size:A4;margin:12mm}
+ html,body{margin:0!important;padding:0!important;background:#fff!important}
+ body[data-screen="report"] #main{display:block!important;height:auto!important;overflow:visible!important;margin:0!important;padding:0!important;max-width:none!important}
+ body[data-screen="report"] #main>*,body[data-screen="report"]>.site-header,body[data-screen="report"]>.site-footer{display:none!important}
+ body[data-screen="report"] #main>.print-passport{display:block!important}
+ .print-passport{width:100%;font-size:9pt;line-height:1.5;color:#142c53;font-family:'Noto Sans KR',sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+ .print-passport header{display:flex;justify-content:space-between;align-items:center;border-bottom:3pt solid #0033a0;padding:0 0 4mm;margin-bottom:4mm}
+ .print-passport header span{font-size:8pt;letter-spacing:.5pt}.print-passport h1{font-size:23pt;line-height:1.25;margin:2mm 0}.print-passport p{margin:1.5mm 0}.print-passport h2{font-size:11pt;margin:0 0 2mm}.print-passport section{margin:0 0 4mm;break-inside:avoid}
+ .print-passport .print-ending{padding:4mm;background:#f1f6ff;border-radius:3mm}.print-ending>span{font-size:8pt}.print-ending h2{font-size:16pt;margin:1.5mm 0}.print-ending>b{display:block;margin-top:2mm;font-size:8.5pt}
+ .print-choices{display:grid;grid-template-columns:1fr 1fr;gap:1mm 4mm}.print-choices>div{display:flex;gap:2mm;align-items:baseline;border-bottom:.3pt solid #cbd7e6;padding:1.3mm 0}.print-choices b{min-width:7mm;color:#0033a0;font-size:8pt}.print-choices span{font-size:8.5pt}
+ .print-change{font-size:8.5pt}.print-change b{color:#0033a0}.print-question{padding:3mm 4mm;border:1pt solid #bfd2eb;border-radius:3mm}.print-question p{font-size:8pt}.write-line{height:5mm;border-bottom:.5pt dashed #768da8}
+ .print-passport footer{display:flex;gap:5mm;border-top:1pt solid #cbd7e6;padding-top:3mm}.print-qr{display:flex;gap:2mm;align-items:center;flex:1}.print-qr img{width:25mm;height:25mm}.print-qr span{font-size:7pt;line-height:1.5}.print-passport .print-note{font-size:6.8pt;line-height:1.5;color:#52647c;margin-top:3mm}.print-algi{position:relative;width:24mm;flex-shrink:0}.print-algi img{width:24mm;display:block}.print-algi b{position:absolute;left:25%;top:22%;width:27%;font-size:5pt;color:white;text-align:center;transform:rotate(-11deg)}
+@media print{.print-toolbar{display:none!important}}
+@media screen{body.print-preview[data-screen="report"] #main{width:100%!important;max-width:210mm!important;padding:12mm!important;margin:0 auto!important;background:#fff}body.print-preview[data-screen="report"]{padding-top:64px!important;background:#e8edf4!important}}
